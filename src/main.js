@@ -19,7 +19,6 @@ axios.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
 app.use(router);
 app.use(vuetify);
 app.use(token);

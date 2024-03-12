@@ -35,7 +35,7 @@ export default {
     };
   },
   created() {
-    window.location.reload();
+    this.$route.push("/")
   },
   mounted() {
     setTimeout(() => {
