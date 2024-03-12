@@ -101,7 +101,7 @@ export default {
       }
     },
     signInWithGoogle() {
-      window.location.href = `http://${process.env.VUE_APP_API_BASE_URL}/oauth2/authorize/google?redirect_uri=https://www.blisle.shop/oauth2/redirect`;
+      window.location.href = `${process.env.VUE_APP_API_BASE_URL}/oauth2/authorize/google?redirect_uri=https://www.blisle.shop/oauth2/redirect`;
     },
   }
 };

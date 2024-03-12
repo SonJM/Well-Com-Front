@@ -33,7 +33,7 @@ export default {
 
         if (authCode) {
             // Axios를 사용하여 백엔드에 인증 코드 전달
-            axios.post('http://localhost:8080/auth/google', { code: authCode })
+            axios.post(`${process.env.APP}/auth/google`, { code: authCode })
                 .then(response => {
                     // 백엔드에서 반환한 응답 처리  
                     console.log(response.data);
