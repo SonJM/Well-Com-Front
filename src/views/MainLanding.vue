@@ -34,6 +34,9 @@ export default {
       showButtons: false,
     };
   },
+  created() {
+    window.location.reload();
+  },
   mounted() {
     setTimeout(() => {
       this.showButtons = true;
