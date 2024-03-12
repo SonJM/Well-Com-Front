@@ -129,7 +129,7 @@ export default {
   data() {
     return {
       sharingRooms: [],
-      s3BucketUrl: "https://mywellcombucket.s3.ap-northeast-2.amazonaws.com/",
+      s3BucketUrl: "https://well-com-bucket.s3.ap-northeast-2.amazonaws.com/",
     };
   },
   methods: {
@@ -173,7 +173,7 @@ export default {
           //   alert("제한 인원이 꽉 찼습니다");
           // } else {
           this.$router.push(`/user/nanumGame/${roomId}`);
-          // }  
+          // }
         } catch (error) {
           console.error(error);
         }
