@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     goToPage(path) {
-      this.$router.push(path);
+      window.location.href = path;
     },
   },
 };
