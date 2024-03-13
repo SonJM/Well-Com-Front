@@ -71,11 +71,10 @@ export default {
         ? "전원 입장 완료!"
         : "제한 인원이 모두 입장하면 게임이 시작됩니다.";
     },
-    
   },
   created() {
     this.connect();
-    window.addEventListener('beforeunload', this.handleBeforeUnload);
+    window.addEventListener("beforeunload", this.handleBeforeUnload);
   },
   beforeRouteLeave(to, from, next) {
     // 라우트를 벗어나기 전에 웹소켓 연결 해제
@@ -213,17 +212,17 @@ export default {
     },
     handleBeforeUnload(event) {
       this.disconnectFromServer();
-      event.returnValue = '';
+      event.returnValue = "";
     },
     disconnectFromServer() {
       if (this.stompClient && this.stompClient.connected) {
         this.stompClient.disconnect();
         console.log("소켓 연결이 해제되었습니다.");
       }
-    }
+    },
   },
   beforeUnmount() {
-    window.removeEventListener('beforeunload', this.handleBeforeUnload);
-  }
+    window.removeEventListener("beforeunload", this.handleBeforeUnload);
+  },
 };
 </script>
