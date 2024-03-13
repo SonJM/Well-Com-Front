@@ -154,19 +154,7 @@ export default {
     async goToNaNumRoom(roomId) {
       if (this.isAuthenticated()) {
         try {
-          // const response = await axios.get(
-          //   `${process.env.VUE_APP_API_BASE_URL}/room/${roomId}/curPeople`
-          // );
-          // console.log(response);
-
-          // // 참가 원하는 방 찾기
-          // const room = this.sharingRooms.find((room) => room.id === roomId);
-          // console.log(room.cntPeople);
-          // if (room && response.data === room.cntPeople) {
-          //   alert("제한 인원이 꽉 찼습니다");
-          // } else {
           this.$router.push(`/user/nanumGame/${roomId}`);
-          // }
         } catch (error) {
           console.error(error);
         }
