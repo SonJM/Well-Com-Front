@@ -19,7 +19,6 @@ export default {
             const access_decoded = jwtDecode(access_token);
             localStorage.setItem("role", access_decoded.role);
             localStorage.setItem("expiredTime", access_decoded.exp);
-            window.alert('로그인이 성공적으로 이루어졌습니다.');
             window.location.href= "/sharingHome"
         } else {
             window.alert('로그인에 실패하였습니다.')
