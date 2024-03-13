@@ -35,7 +35,6 @@ export default {
     };
   },
   created() {
-    this.$route.push("/")
   },
   mounted() {
     setTimeout(() => {
