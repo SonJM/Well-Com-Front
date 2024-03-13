@@ -151,13 +151,6 @@ export default {
         alert("로그인이 필요한 서비스입니다.");
       }
     },
-    // async goToNaNumRoom(roomId) {
-    //   if (this.isAuthenticated()) {
-    //     this.$router.push(`/user/nanumGame/${roomId}`);
-    //   } else {
-    //     alert("로그인이 필요한 서비스입니다.");
-    //   }
-    // },
     async goToNaNumRoom(roomId) {
       if (this.isAuthenticated()) {
         try {
