@@ -35,10 +35,10 @@
 
 <br/>
 
-* docker compose
+* docker compose <br/>
 단순한 개발 환경 또는 작은 규모의 애플리케이션에 적합
 
-* kubernetes ✅
+* kubernetes ✅<br/>
 대규모 및 고가용성 애플리케이션 및 확장성이 요구되는 복잡한 시나리오에 적합
 
 
@@ -372,9 +372,9 @@ spec:
 1️⃣ Jenkins Webhook 설정 시 ngrok 사용
 <details>
 <summary> ngrok 설정 방법 </summary>
-  jenkins 서버를 local 환경에서 띄우다 보니 Github Webhook에 URL 지정 불가
+  jenkins 서버를 local 환경에서 띄우다 보니 Github Webhook에 Public한 URL 지정 불가
 
-➔ local 서버를 외부에서 접속할 수 있게 해주는 터널린 서비스 ngrok 사용하여, local에 띄운 jenkins 서버를 외부에서 들어올 수 있도록 설정
+➔ local 서버를 외부에서 접속할 수 있게 해주는 터널링 서비스 ngrok 사용하여, local에 띄운 jenkins 서버를 외부에서 들어올 수 있도록 설정
   
 ➔ 1분마다 polling 방식이 아닌, 코드 변동사항 "즉시" 반영 !
   
